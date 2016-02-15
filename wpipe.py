@@ -264,7 +264,7 @@ class Server(Base):
             client.close()
             self.clients.remove(client)
 
-    def getclientcount():
+    def getclientcount(self):
         self.dropdeadclients()
         return len(self.clients)
 
